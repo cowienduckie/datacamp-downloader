@@ -1,4 +1,4 @@
-# Datacamp Downloader
+# Datacamp Downloader (Fixed)
 
 [![GitHub license](https://img.shields.io/github/license/TRoboto/datacamp-downloader)](https://github.com/TRoboto/datacamp-downloader/blob/master/LICENSE)
 [![PyPI version](https://badge.fury.io/py/datacamp-downloader.svg)](https://pypi.org/project/datacamp-downloader/)
@@ -29,6 +29,8 @@
 
 ## Update
 
+I have fixed this tool a little bit from TRoboto's version in order to run with newer Python and package versions. To build and run locally, please go to [Development](#development) section.
+
 Datacamp Downloader V3.2 is now available. The major change is that the tool now uses selenium for the backend. See changelog for version [3.0](https://github.com/TRoboto/datacamp-downloader/pull/39), [3.1](https://github.com/TRoboto/datacamp-downloader/pull/42)
 and [3.2](https://github.com/TRoboto/datacamp-downloader/pull/47).
 
@@ -58,10 +60,10 @@ pip install datacamp-downloader
 
 ### From source
 
-You can directly clone this repo and install the tool with:
+You can directly clone this repo and install the tool with (fixed from TRoboto's source):
 
 ```
-pip install git+https://github.com/TRoboto/datacamp-downloader.git
+pip install git+https://github.com/cowienduckie/datacamp-downloader.git
 ```
 
 ### Autocompletion
