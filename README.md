@@ -13,6 +13,7 @@
 
 - [Datacamp Downloader](#datacamp-downloader)
   - [Table of Contents](#table-of-contents)
+  - [Update](#update)
   - [Description](#description)
   - [Installation](#installation)
     - [PIP](#pip)
@@ -24,6 +25,7 @@
     - [Download](#download)
   - [User Privacy](#user-privacy)
   - [Disclaimer](#disclaimer)
+  - [Development](#development)
 
 ## Update
 
@@ -219,3 +221,33 @@ datacamp reset
 This CLI is provided to help you download Datacamp courses/tracks for personal use only. Sharing the content of the courses is strictly prohibited under [Datacamp's Terms of Use](https://www.datacamp.com/terms-of-use/).
 
 By using this CLI, the developers of this CLI are not responsible for any law infringement caused by the users of this CLI.
+
+## Development
+
+To build the package locally, firstly create and Virtual Environment and activate it:
+
+```
+python -m venv .venv
+source .venv/bin/activate
+```
+
+Then install the dependencies:
+```
+pip install --upgrade --force-reinstall -r requirements.txt  
+pip install setuptools wheel build
+```
+
+To build the package:
+```
+python -m build --sdist --wheel --outdir dist/ .
+```
+
+To install the package locally:
+```
+pip install dist/datacamp_downloader-3.2-py3-none-any.whl
+```
+
+To run the CLI:
+```
+datacamp --help
+```
